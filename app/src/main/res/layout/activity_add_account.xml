@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.manny.darshann.viewModel.AddAccountViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:background="@color/brand_color"
+                android:layout_height="64dp">
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/back_arrow"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_account_details"
+                    android:textColor="@color/white_200"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginStart="16dp"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toEndOf="@+id/iv_back"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/edit"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="20dp"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.core.widget.NestedScrollView>
+
+            <RelativeLayout
+                android:layout_width="260dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="240dp"
+                    android:layout_height="130dp"
+                    app:cardCornerRadius="24dp"
+
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/god_image"/>
+
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:elevation="16dp"
+                    android:src="@drawable/camera_icon"
+                    android:padding="12dp"
+                    android:background="@drawable/camera_bg"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temple_name"
+                android:layout_marginStart="20dp"
+                android:textSize="14sp"
+                android:textColor="@color/text_color"
+                android:layout_marginTop="16dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintAnimationEnabled="false"
+                app:hintEnabled="false"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="4dp"
+                app:endIconMode="custom"
+                android:layout_marginStart="20dp"
+                app:endIconDrawable="@android:color/transparent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:textSize="14sp"
+                    android:hint="+91 999999999"
+                    android:background="@drawable/et_ligh_grey_bg"
+                    android:textColor="@color/brand_color"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temple_address"
+                android:layout_marginStart="20dp"
+                android:textSize="14sp"
+                android:textColor="@color/text_color"
+                android:layout_marginTop="16dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintAnimationEnabled="false"
+                app:hintEnabled="false"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="4dp"
+                app:endIconMode="custom"
+                android:layout_marginStart="20dp"
+                app:endIconDrawable="@android:color/transparent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:textSize="14sp"
+                    android:hint="@string/temple_address_example"
+                    android:background="@drawable/et_ligh_grey_bg"
+                    android:textColor="@color/brand_color"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mobile_no"
+                android:layout_marginStart="20dp"
+                android:textSize="14sp"
+                android:textColor="@color/text_color"
+                android:layout_marginTop="16dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintAnimationEnabled="false"
+                app:hintEnabled="false"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="4dp"
+                app:endIconMode="custom"
+                android:layout_marginStart="20dp"
+                app:endIconDrawable="@android:color/transparent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:hint="+91 999999999"
+                    android:textSize="14sp"
+                    android:background="@drawable/et_ligh_grey_bg"
+                    android:textColor="@color/brand_color"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/upi_id"
+                android:layout_marginStart="20dp"
+                android:textSize="14sp"
+                android:textColor="@color/text_color"
+                android:layout_marginTop="16dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintAnimationEnabled="false"
+                app:hintEnabled="false"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="4dp"
+                app:endIconMode="custom"
+                android:layout_marginStart="20dp"
+                app:endIconDrawable="@android:color/transparent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:hint="999999999@paytm"
+                    android:textSize="14sp"
+                    android:background="@drawable/et_ligh_grey_bg"
+                    android:textColor="@color/brand_color"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/account_no"
+                android:layout_marginStart="20dp"
+                android:textSize="14sp"
+                android:textColor="@color/text_color"
+                android:layout_marginTop="16dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintAnimationEnabled="false"
+                app:hintEnabled="false"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="4dp"
+                app:endIconMode="custom"
+                android:layout_marginStart="20dp"
+                app:endIconDrawable="@android:color/transparent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:hint="32143456456"
+                    android:textSize="14sp"
+                    android:background="@drawable/et_ligh_grey_bg"
+                    android:textColor="@color/brand_color"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ifsc_code"
+                android:layout_marginStart="20dp"
+                android:textSize="14sp"
+                android:textColor="@color/text_color"
+                android:layout_marginTop="16dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintAnimationEnabled="false"
+                app:hintEnabled="false"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="4dp"
+                app:endIconMode="custom"
+                android:layout_marginStart="20dp"
+                app:endIconDrawable="@android:color/transparent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:hint="SBIN0004532"
+                    android:textSize="14sp"
+                    android:background="@drawable/et_ligh_grey_bg"
+                    android:textColor="@color/brand_color"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/logout"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:paddingVertical="16dp"
+            android:textColor="@color/brand_color"
+            android:background="@color/white_200"/>
+    </RelativeLayout>
+
+
+</layout>

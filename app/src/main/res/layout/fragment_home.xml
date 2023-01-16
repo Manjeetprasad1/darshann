@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.manny.darshann.viewModel.HomeViewModel" />
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/brand_color"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/et_serach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintAnimationEnabled="false"
+                app:hintEnabled="false"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:endIconMode="custom"
+                app:startIconDrawable="@drawable/path_16"
+                app:startIconTint="@color/brand_color"
+                app:endIconDrawable="@android:color/transparent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:hint="@string/serach"
+                    android:background="@drawable/et_background"
+                    android:textColor="@color/brand_color"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            
+        </RelativeLayout>
+        
+        
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="158dp"
+            android:layout_height="wrap_content"
+            android:text="@string/login_as_preist"
+            android:background="@drawable/red_bt_bg"
+            android:textColor="@color/white_200"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:paddingVertical="10dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/banner1"
+            android:scaleType="fitXY"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+
+        </ImageView>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+
+
+
+
+
+        
+
+    </LinearLayout>
+
+
+</layout>

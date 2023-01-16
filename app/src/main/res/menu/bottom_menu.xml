@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/home"
+        android:icon="@drawable/home"
+        android:enabled="true"
+        android:title="Home"
+        android:visible="true"
+        />
+    <item android:id="@+id/events"
+        android:icon="@drawable/calender"
+        android:enabled="true"
+        android:title="Event"
+        android:visible="true"/>
+
+<!--    <item android:id="@+id/campaign"-->
+<!--        android:icon="@drawable/ic_megaphone_2x"-->
+<!--        android:enabled="true"-->
+<!--        android:title="Campaign"-->
+<!--        android:visible="true"/>-->
+
+    <item android:id="@+id/remainder"
+        android:icon="@drawable/clock_time"
+        android:enabled="true"
+        android:title="Reminders"
+        android:visible="true"/>
+
+    <item android:id="@+id/account"
+        android:icon="@drawable/me"
+        android:enabled="true"
+        android:title="Account"
+        android:visible="true"/>
+
+</menu>

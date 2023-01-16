@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.manny.darshann.viewModel.PaymentConfirmationViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_temple"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_temple_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/temple_name_example"
+            app:layout_constraintTop_toBottomOf="@+id/iv_temple"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"/>
+
+
+        <TextView
+            android:id="@+id/tv_temple_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/temple_address_example"
+            app:layout_constraintTop_toBottomOf="@+id/tv_temple_name"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"/>
+
+
+
+        <TextView
+            android:id="@+id/tv_ticket_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Darshan Ticket Rs 100"
+            app:layout_constraintTop_toBottomOf="@+id/tv_temple_address"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/brand_color"
+            android:textSize="14sp"/>
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_tick"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/green_tick"
+            app:layout_constraintTop_toBottomOf="@+id/tv_ticket_amount"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"/>
+
+
+        <TextView
+            android:id="@+id/tv_paid_successfully"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/paid_successfully"
+            app:layout_constraintTop_toBottomOf="@+id/iv_tick"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/tv_payment_info_tile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:cardCornerRadius="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_paid_successfully">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_color"
+                        android:text="@string/payment_method"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="14sp"
+                    android:layout_marginTop="12dp"
+                    android:textColor="@color/text_color"
+                    android:text="@string/upi_transaction"/>
+
+
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/tv_visit_temple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/visit_the_temple"
+            android:textColor="@color/white_200"
+            app:layout_constraintTop_toBottomOf="@+id/tv_payment_info_tile"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:paddingVertical="12dp"
+            android:layout_marginTop="52dp"
+            android:background="@drawable/red_bt_bg"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="12dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

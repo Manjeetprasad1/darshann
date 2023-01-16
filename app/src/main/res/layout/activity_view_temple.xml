@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.manny.darshann.devotee.viewModel.ViewLiveViewModel" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue_grey">
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="24dp"
+            android:background="@drawable/white_bg"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+            <ImageView
+                android:id="@+id/iv_temple"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/et_background"
+                android:src="@drawable/god_image"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:id="@+id/tv_temple_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/brand_color"
+                android:text="@string/temple_name_example"
+                android:layout_toEndOf="@+id/iv_temple"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_temple_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temple_address_example"
+                android:layout_toEndOf="@+id/iv_temple"
+                android:layout_below="@+id/tv_temple_name"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/text_color"
+                android:layout_marginStart="20dp"/>
+
+        </RelativeLayout>
+
+
+
+            
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

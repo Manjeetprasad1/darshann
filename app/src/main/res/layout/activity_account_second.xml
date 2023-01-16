@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.manny.darshann.viewModel.AccountTwoViewModel" />
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:background="@color/brand_color"
+            android:layout_height="64dp">
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/back_arrow"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/account"
+                android:textColor="@color/white_200"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="16dp"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/iv_back"/>
+
+            <ImageView
+                android:id="@+id/iv_edit"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/edit"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="20dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="240dp"
+            android:layout_height="130dp"
+            app:cardCornerRadius="24dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/god_image"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shri Siddhi Vinayak Ganapati Mandir"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/brand_color"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/temple_address_example"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/grey_500"
+            android:layout_marginTop="7dp"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mobile_number"
+                android:paddingStart="10dp"
+                android:layout_weight="1"
+                android:background="@color/grey_500"
+                android:paddingVertical="4dp"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mobile_number"
+                android:paddingStart="10dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:background="@color/grey_500"
+                android:paddingVertical="4dp"
+                android:textSize="14dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mobile_number"
+                android:paddingStart="10dp"
+                android:layout_weight="1"
+                android:background="@color/grey_500"
+                android:paddingVertical="4dp"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mobile_number"
+                android:paddingStart="10dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:background="@color/grey_500"
+                android:paddingVertical="4dp"
+                android:textSize="14dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                app:cardCornerRadius="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="110dp"
+                        android:src="@drawable/gold_plate"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/today_thali"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:layout_marginTop="-8dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/date_example"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:layout_marginBottom="8dp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                app:cardCornerRadius="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="110dp"
+                        android:src="@drawable/gold_plate"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/today_thali"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:layout_marginTop="-8dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/date_example"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:layout_marginBottom="8dp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.manny.darshann.devotee.viewModel.VistTempleLiveViewModel" />
+
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue_grey">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/white_bg"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="192dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                app:cardCornerRadius="24dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/god_image"/>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/tv_temple_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/temple_name_example"
+                app:layout_constraintTop_toBottomOf="@+id/iv_temple"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/brand_color"
+                android:textSize="16sp"/>
+
+
+            <TextView
+                android:id="@+id/tv_temple_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/temple_address_example"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/text_color"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_view_live"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/view_live"
+            android:textColor="@color/white_200"
+            app:layout_constraintTop_toBottomOf="@+id/layout"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:paddingVertical="12dp"
+            android:layout_marginTop="52dp"
+            android:background="@drawable/red_bt_bg"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="12dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:orientation="vertical">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Service Request"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pooja"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/red_bt_bg"
+                    android:paddingVertical="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/archan"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/red_bt_bg"
+                    android:paddingVertical="8dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/abhishek"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/red_bt_bg"
+                    android:paddingVertical="8dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="77dp"
+                        android:src="@drawable/hundi"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hundi"
+                        android:layout_below="@+id/iv_img"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/text_color"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_img2"
+                        android:layout_width="match_parent"
+                        android:layout_height="77dp"
+                        android:src="@drawable/gold_plate"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/thali"
+                        android:layout_below="@+id/iv_img2"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/text_color"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

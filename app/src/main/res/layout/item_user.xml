@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="itemViewModel"
+            type="com.manny.darshann.itemViewModel.UserItemViewModel" />
+    </data>
+
+  
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="16dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <RelativeLayout
+                    android:id="@+id/layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_grey"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_user"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:src="@color/text_color" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/name_of_devotee"
+                        android:layout_gravity="center_vertical"
+                        android:layout_toEndOf="@+id/iv_user"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/text_color"
+                        android:layout_marginStart="16dp"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@{itemViewModel.userEntity.name}"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/text_bg"
+                        android:paddingStart="24dp"
+                        android:paddingEnd="8dp"
+                        android:gravity="center"
+                        android:textColor="@color/white_200"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:paddingVertical="8dp"
+                        android:elevation="16dp"/>
+
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_gotra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gotra_lorem_ipsum"
+                    android:layout_below="@+id/layout"
+                    android:textColor="@color/text_color"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"/>
+
+
+                <TextView
+                    android:id="@+id/tv_nakshatra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nakshatra_lorem_ipsum"
+                    android:layout_below="@+id/layout"
+                    android:layout_toEndOf="@+id/tv_gotra"
+                    android:textColor="@color/text_color"
+                    android:layout_marginStart="56dp"
+                    android:layout_marginTop="16dp"/>
+
+
+                <TextView
+                    android:id="@+id/tv_dob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date_of_birth"
+                    android:layout_below="@+id/tv_gotra"
+                    android:textColor="@color/text_color"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"/>
+
+
+                <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/time_example"
+                android:layout_below="@+id/tv_nakshatra"
+                android:layout_toEndOf="@+id/tv_dob"
+                android:textColor="@color/text_color"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="16dp"/>
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+            
+            
+            
+            
+        </androidx.cardview.widget.CardView>
+
+    
+
+</layout>
